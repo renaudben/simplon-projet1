@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Blog de Renaud - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="text-white">
+        <h1 class="d-inline"><a href="">Mon Blog</a></h1>
+        <nav class="d-inline">
+            <ul>
+                <li><a href="#about-me">À propos</a></li>
+                <li><a href="#my-passion">Ma passion</a></li>
+				<li><a class="btn-white" id="openPopupBtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <section id="about-me" class="section">
+        <div class="container">
+            <div class="image image1">
+                <img src="images/smiling-man.jpg" alt="Image 1">
+            </div>
+            <div class="text">
+				<h2 class="title text-white">À propos de moi</h2>
+				<p class="mb-10 text-white">Bonjour, je suis Renaud, un informaticien passionné par le développement d'applications. Bien que ma carrière professionnelle ait principalement tourné autour de l'administration réseau, ma véritable vocation réside dans le développement.
+				J'ai donc décidé de me recentrer sur mes premiers amours : la création d'applications. Mon objectif aujourd'hui est de bâtir une carrière professionnel solide dans ce secteur, et c'est pourquoi je participe à cette formation, afin d'acquérir les compétences nécessaires à l'atteinte de cet objectif.</p>
+				<p class="mb-10 text-white">Au-delà de mon parcours professionnel, je suis également un grand amoureux de sport et de nature. Le sport, en général, et le football en particulier, occupent une place importante dans ma vie. J'aime suivre les matchs, pratiquer et échanger autour de cette discipline. Par ailleurs, je suis profondément attaché à la préservation de notre planète,
+				en notamment en ce qui concerne la flore et la faune. Chaque action visant à protéger notre environnement et à préserver sa biodiversité me touche particulièrement.</p>
+				<p class="text-white">Je vous souhaite donc la bienvenue sur cette page, et j'espère que vous passez un agréable moment ici et que vous avez apprécié savoir un peu plus sur mon parcous et mes motivations.</p>
+				<!--N'hésitez pas à explorer et à partager vos impressions !-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="my-passion" class="section">
+        <div class="container">
+            <div class="text">
+                <h2 class="title text-purple">Ma passion</h2>
+                <h3>Alors, pourquoi le développement d'applications me passionne-t-il autant ?</h3>
+				<p class="mb-10">Cette passion née du fait que j'ai grandi à une époque où le numérique n'éxistait pratiquement pas. Ayant vécu cette transition fascinante, j'ai été témoin, année après année, de l'explosion de la technologie et de son impact profond et significatif sur notre quotidien.
+				De la révolution de la communication à la transformation du commerce mondial, j'ai observé de près les incroyables progrès que le numérique a permis de réaliser, non seulement à l'échelle locale, mais aussi à l'échelle mondiale.</p>
+				<p class="mb-10">Ce qui me fascine particulièrement, c'est de savoir que ces avancées ont souvent permis de résoudre des défis complexes et de changer la vie de millions de personnes, parfois de manière radicale. Ayant vécu ce cheminement, je mesure pleinement aujourd'hui la valeur du numérique et son potentiel infini dans la vie de chaque être humain.
+				Tout cela m'a donc naturellement conduit à m'intéresser au développement d'applications, un domaine par lequel je souhaite non seulement approfondir mes connaissances, mais aussi apporter ma propre contribution à l'amélioration continue de notre monde.</p>
+				<p>C'est avec cette conviction profonde que je me lance dans cette aventure, animé par l'idée de participer à l'évolution numérique, et de contribuer à la création de solutions qui, je l'espère, auront un impact positif sur notre vie de tous les jours.</p>
+			</div>
+			<div class="image image2">
+                <img src="images/african-digital-min.jpg" alt="Image 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-white">&copy; 2025 Le Blog de Renaud - Tous droits réservés</p>
+    </footer>
+	
+    <!-- Fenêtre pop-up -->
+    <div id="popup" class="popup">
+		<button class="close-btn" id="closePopupBtn">x</button>
+        <div class="body text-center"><h2>Mes Informations</h2>
+			<p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+			<p><strong>Email :</strong> renaudben00@gmail.com</p>
+			<p><strong>Téléphone :</strong> +225 07 67 63 65 66</p>
+		</div>
+    </div>
+
+    <!-- Fond de la fenêtre pop-up -->
+    <div id="overlay" class="overlay"></div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
